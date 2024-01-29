@@ -6,7 +6,7 @@ import {
   View,
   StyleSheet,
   Button,
-  TextInput,
+  TextInput
 } from 'react-native';
 // import UserData from './components/UserDetails';
 // import Firstcomp from './components/Firstcomp';
@@ -26,52 +26,64 @@ import {
 // import StyleButton from './components/StyleButton';
 // import Radiobutton from './components/Radiobutton';
 // import Nav from './components/Nav';
-import { NavigationContainer } from '@react-navigation/native'
-import { createNativeStackNavigator } from '@react-navigation/native-stack'
-import Login from './components/Login';
-import Homescreen from './components/Homescreen';
+// import { NavigationContainer } from '@react-navigation/native'
+// import { createNativeStackNavigator } from '@react-navigation/native-stack'
+// import Login from './components/Login';
+// import Homescreen from './components/Homescreen';
+// import PostAPI from './components/APIs/PostAPI';
+// import NewPostAPI from './components/APIs/NewPostAPI';
+import GetAPIData from './components/APIs/GetAPIData';
 
 
-const Stack = createNativeStackNavigator();
+// const Stack = createNativeStackNavigator();
 
 const App = () => {
 
   return ( 
-    <NavigationContainer>
-        <Stack.Navigator
-              screenOptions={{
-              headerStyle:{
-                backgroundColor:'blue',
-              },
-              headerTintColor:'orange',
-              headerTitleStyle:{
-                fontSize:25
-              }
-            }}
-          >
-          <Stack.Screen name = 'Login' component={Login} 
-              options={{
-                headerTitle:()=><Button title='Left'/>,
-                headerRight:()=><Header/>,
-                title:"User Login",
-                headerStyle:{
-                  backgroundColor:'sky blue',
-                },
-                headerTintColor:'red',
-                headerTitleStyle:{
-                fontSize:40
-              }
-            }}
-          />
-          <Stack.Screen name='Home' component={Homescreen} />
-        </Stack.Navigator> 
-    </NavigationContainer>
-      )
-};
+    <View>
+      {/* <PostAPI /> */}
+      {/* <NewPostAPI /> */}
+      <GetAPIData />
 
-const Header=()=>{
-  return(<TextInput placeholder='name' />)
-}
+
+      {/* <Text>Mewhfgfh</Text> */}
+    </View>
+  )}
+    // <NavigationContainer>
+    //     <Stack.Navigator
+    //           screenOptions={{
+    //           headerStyle:{
+    //             backgroundColor:'blue',
+    //           },
+    //           headerTintColor:'orange',
+    //           headerTitleStyle:{
+    //             fontSize:25
+    //           }
+    //         }}
+    //       >
+    //       <Stack.Screen name = 'Login' component={Login} 
+    //           options={{
+    //             headerTitle:()=><Button title='Left'/>,
+    //             headerRight:()=><Header/>,
+    //             title:"User Login",
+    //             headerStyle:{
+    //               backgroundColor:'sky blue',
+    //             },
+    //             headerTintColor:'red',
+    //             headerTitleStyle:{
+    //             fontSize:40
+    //           }
+    //         }}
+    //       />
+    //       <Stack.Screen name='Home' component={Homescreen} />
+    //     </Stack.Navigator> 
+    // </NavigationContainer>
+      // )
+// };
+
+// const Header=()=>{
+//   return(<TextInput placeholder='name' />)
+// }
 
 
 
