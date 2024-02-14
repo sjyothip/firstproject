@@ -33,6 +33,7 @@ import {
 // import PostAPI from './components/APIs/PostAPI';
 // import NewPostAPI from './components/APIs/NewPostAPI';
 import GetAPIData from './components/APIs/GetAPIData';
+import ButtonTypes from './components/ButtonTypes';
 
 
 // const Stack = createNativeStackNavigator();
@@ -43,7 +44,8 @@ const App = () => {
     <View>
       {/* <PostAPI /> */}
       {/* <NewPostAPI /> */}
-      <GetAPIData />
+      {/* <GetAPIData /> */}
+      <ButtonTypes />
 
 
       {/* <Text>Mewhfgfh</Text> */}
