@@ -1,10 +1,15 @@
-import React from 'react'
-import { StyleSheet, TouchableOpacity , View , Text } from 'react-native'
+import  React , { useState } from 'react'
+import { 
+        StyleSheet,
+        TouchableOpacity , 
+        View , 
+        Text 
+      } from 'react-native'
 
 const Radiobutton = () => {
   const [radiosel,setRadiosel] = useState(1)
 
-  const skills =[
+  const skills = [
     {
       id:1,
       name:'JAVA'

@@ -4,7 +4,7 @@ import {Text, View , TouchableHighlight, StyleSheet } from 'react-native'
 const StyleButton = () => {
   return (
     <View>
-        
+        <Text>Style Button</Text>
         <TouchableHighlight>
         <Text style={[styles.button, styles.success]}>Success</Text>
         </TouchableHighlight>

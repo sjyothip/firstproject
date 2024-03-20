@@ -1,6 +1,8 @@
 import React from 'react';
+import { Text,
+         View
+        } from 'react-native';
 // import { WebView} from 'react-native-webview'
-
 const Newnpm = () => {
   return (
     <View><Text>    Mos
